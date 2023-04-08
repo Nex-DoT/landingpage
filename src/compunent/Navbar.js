@@ -13,7 +13,6 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className={styles.Img}>
-                <img src={JSlogo} alt="" />
                 <img src={REACTlogo} alt="" />
             </div>
         </header>

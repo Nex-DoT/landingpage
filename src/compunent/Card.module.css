@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap');
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    border: 1px solid #ffffff55;
+    color: white;
+    background-color: #272727;
+    font-family: 'Chivo Mono', monospace;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0 #ffffff2a;
+    transition: 0.5s all;
+}
+.card:hover{
+    background-color: #191919;
+    border: 1px solid green;
+}
+.card img{
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow: 0 0 8px 0 #00000038;
+}
+.text p{
+    color: aliceblue;
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+.text{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.btn{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 100;
+    background-color: green;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.642);
+    border-radius: 5px;
+    z-index: 500;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:hover{
+    border-color: green;
+    background-color: #27272700;
+}
