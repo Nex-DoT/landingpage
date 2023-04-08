@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+.baner{
+    position: relative;
+    background: url(../img/Baner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40rem;
+    z-index: -10;
+    box-shadow: 0 0 5px 0 black;
+}
+.textBox{
+    width: 350px;
+    height: 200px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-flow: column ;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #2e2e2e85;
+    box-shadow: 0 2px 5px 0 #0a0a0a56;
+    border-radius: 5px;
+    backdrop-filter: blur(1px);
+    padding: 0 20px;
+    margin-left: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+.textBox h1{
+    font-size: 55px;
+    letter-spacing: 4px;
+    margin: 3px auto;
+    color: white;
+}
+.textBox h3{
+    margin: 10px 25px;
+    font-size: 20px;
+    color: #e9e9e9;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+.textBox h3 span{
+    letter-spacing: 0;
+    color: aqua;
+    font-size: 22px;
+}
