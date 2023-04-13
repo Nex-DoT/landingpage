@@ -9,14 +9,12 @@ export default class Card extends Component {
     }
   }
   Minus = ()=>{
-    this.setState(prevState=>({
-      number: prevState.number -1,
-    }))
 
-    if(this.state.number === 0){
-      this.setState({
-        number: 0,
-      })
+
+    if(this.state.number >= 1){
+      this.setState(prevState=>({
+        number: prevState.number -1,
+      }))
     }
   }
   Positive = ()=>{
@@ -31,7 +29,7 @@ export default class Card extends Component {
         <img src={img} alt="" />
         <div className={styles.text}>
         <h3>{name}</h3>
-        <p>price: <span>${price}</span></p>
+        <p>price: <span>${price} {this.state.number ? `* ${this.state.number} = ${this.state.number * Number(price)}` : ""}</span></p>
         </div>
         <div className={styles.boxc}>
         <button className={this.state.number ? styles.btn : styles.deactive} onClick={this.Minus}>-</button>
